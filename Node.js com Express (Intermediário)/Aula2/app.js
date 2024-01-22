@@ -7,22 +7,21 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Recurso Obtido' });
+  res.status(200).json({ message: 'Recurso Obtido', status: 200 });
 });
 
 app.post('/', (req, res) => {
-  res.json({ message: 'Recurso Criado' });
+  res.status(201).json({ message: 'Recurso Criado', status: 201 });
 });
 
 app.put('/', (req, res) => {
-  res.json({ message: 'Recurso Atualizado' });
+  res.status(200).json({ message: 'Recurso Atualizado', status: 200 });
 });
 
 app.delete('/', (req, res) => {
-  res.json({ message: 'Recurso Excluído' });
+  res.status(200).json({ message: 'Recurso Excluído', status: 200 });
 });
 
 app.patch('/', (req, res) => {
-    res.json({ message: 'Recurso Modificado Parcialmente' });
+  res.status(200).json({ message: 'Recurso Modificado Parcialmente', status: 200 });
 });
-  
